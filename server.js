@@ -1,14 +1,14 @@
 // importuję http
-// import http form "http"; - działa od wersji 16.0 node.js
-
 const http = require('http');
-const app = require('./app')  // import app.js
+
+// importuję apkę
+const app = require('./app');
 
 // wyznaczam nr portu
 const port = process.env.port || 3000;
 
 // tworzę serwer
-const server = http.createServer(app); // app oznacza opcje serwera
+const server = http.createServer(app);
 
-//odpalam serwer
+// odpalam serwer
 server.listen(port);
